@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شباب بتساعد شباب - تمكين الشباب من خلال التعليم</title>
+    <meta name="description"
+        content="منصة شبابية رائدة تربط الشباب بأفضل الفرص التعليمية: مسابقات، دورات، منح دراسية، وموارد حصرية لمساعدتك على التفوق منذ 2020. حائزة على جائزة المجلس العربي لشباب العالم 2024.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <link rel="icon" type="image/x-icon" href="src/sbs_ic.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.rtl.css" />
+    <link rel="stylesheet" href="styles/sbs.css">
+
+
+</head>
+
+<body class="antialiased">
+
+
+    <header class="sticky top-0 bg-white shadow-sm z-50 transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://i.ibb.co/3yDZTSfF/sbs-logo.webp" alt="شباب بتساعد شباب Logo"
+                        class="h-16 transition-height duration-300 ease-in-out">
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#home" class="nav-link"></a>
+                    <a href="#home" class="nav-link">الرئيسية</a>
+                    <a href="#about" class="nav-link">عن شباب بتساعد شباب</a>
+                    <a href="#events" class="nav-link">الفعاليات</a>
+                    <a href="#team" class="nav-link">الفريق</a>
+                    <a href="#resources-intro" class="nav-link">الموارد</a>
+                    <a href="#opportunities" class="nav-link">الفرص</a>
+
+                    <a href="#contact" class="nav-link">تواصل معنا</a>
+                </nav>
+                <div class="flex items-center">
+                    <button id="mobile-menu-button"
+                        class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-coral">
+                        <i class="fas fa-bars text-2xl text-navy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="mobile-nav"
+        class="fixed inset-0 bg-navy bg-opacity-98 z-[9999] flex flex-col items-center  transform transition-transform duration-300 ease-in-out translate-x-full">
+
+        <div class="flex justify-end p-5 w-full">
+            <button id="close-mobile-nav">
+                <i class="fas fa-times text-3xl text-white hover:text-coral transition-colors"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center flex-grow w-full space-y-6 bg-white bg-opacity-80">
+            <a href="#home" class="mobile-nav-link">الرئيسية</a>
+            <a href="#about" class="mobile-nav-link">عن شباب بتساعد شباب</a>
+            <a href="#events" class="mobile-nav-link">الفعاليات</a>
+            <a href="#resources-intro" class="mobile-nav-link">الموارد</a>
+            <a href="#opportunities" class="mobile-nav-link">الفرص</a>
+            <a href="#team" class="mobile-nav-link">الفريق</a>
+
+            <a href="#contact" class="mobile-nav-link">تواصل معنا</a>
+        </div>
+    </div>
+
+
+    <section id="home" class="overflow-hidden relative">
+
+        <div id="three-container"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+                <div class="lg:w-1/2 text-center lg:text-right order-2 lg:order-1">
+                    <h1 class="text-4xl sm:text-5xl xl:text-6xl hero-headline mb-5 animate-on-scroll"
+                        style="transform: translateX(50px);" data-delay="100">
+                        تمكين <span class="text-highlight-coral">الشباب</span><br>
+                        من خلال <span class="text-highlight-teal">التعليم</span>
+                    </h1>
+                    <p class="text-lg hero-subheadline mb-8 animate-on-scroll" style="transform: translateX(50px);"
+                        data-delay="300">
+                        ربط الشباب بالفرص التعليمية منذ 2020. <br class="hidden sm:block">
+                        حائزون على جائزة المجلس العربي لشباب العالم 2024.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 hero-buttons animate-on-scroll"
+                        style="transform: translateX(50px);" data-delay="500">
+                        <a href="pages/educational_resources.html" class="btn btn-primary">استكشف الموارد</a>
+                        <a href="https://drive.google.com/file/d/1EP6EGrWyc6kNu_uNNGPG2jAlxBbbolK2/view"
+                            class="btn btn-outline-navy">الإنفوجرافيك الخاص بنا</a>
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-start space-x-4 social-proof animate-on-scroll"
+                        style="transform: translateX(50px);" data-delay="700">
+                        <div class="social-proof-circles">
+                            <span class="sp-circle-1">5</span>
+                            <span class="sp-circle-2">2</span>
+                            <span class="sp-circle-3">0</span>
+                            <span class="sp-circle-4">2</span>
+                        </div>
+                        <p class="social-proof-text text-sm">
+                            <span class="font-bold">100,000+ شاب</span><br>
+                            وجدوا فرصتهم عبر منصتنا
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full order-1 lg:order-2 animate-on-scroll" style="transform: translateX(-50px);"
+                    data-delay="200">
+                    <div id="hero-image-carousel" class="hero-image-carousel-container">
+
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats-container animate-on-scroll" style="transform: translateY(50px);" data-delay="300">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number" data-count="20000">0+</div>
+                        <div class="hero-stat-label">مسابقة</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number" data-count="15000">0+</div>
+                        <div class="hero-stat-label">دورة</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number" data-count="5000">0+</div>
+                        <div class="hero-stat-label">منحة</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="hero-stat-number" data-count="10000">0+</div>
+                        <div class="hero-stat-label">برنامج</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-16 md:py-20 bg-light-cyan">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
+                <div class="lg:w-1/2 animate-on-scroll" style="transform: translateX(50px);" data-delay="100">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 section-heading">عن شباب بتساعد شباب</h2>
+                    <p class="mb-6 text-lg text-gray-700 leading-relaxed">
+                        نحن لسنا مجرد مبادرة، بل نحن مجتمع شبابي عربي انطلق في 17 سبتمبر 2020، وتُوّجنا بفخر بجائزة
+                        المجلس
+                        العربي لشباب العالم عام 2024 تقديراً لجهودنا المتميزة في خدمة الشباب.
+                    </p>
+                    <div class="mission-vision-card">
+                        <div>
+                            <h3><i class="fas fa-bullseye text-coral mr-2"></i> مهمتنا</h3>
+                            <p>
+                                تتمثل في تمكين وتزويد الشباب في المراحل التعليمية المختلفة بالمهارات والمعرفة والفرص
+                                اللازمة
+                                لتحقيق رؤيتنا بتوفير مجموعة شاملة من الموارد كما هو مذكور في النبذة الخاصة بنا وذلك عبر
+                                وجودنا على المنصات المختلفة لربط الشباب بالفرص التعليمية المتنوعة (مسابقات، دورات،
+                                برامج،
+                                منح، مصادر لغة، خطط تطوير ذاتي).
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <h3><i class="fas fa-eye text-teal mr-2"></i> رؤيتنا</h3>
+                            <p>
+                                خلق عالم يتمكن فيه كل شاب من الوصول إلى الموارد والفرص التي يحتاجها للنجاح في مساعيه
+                                الأكاديمية والمهنية. لذلك نحن نسعى جاهدين لنكون المزود الرائد للموارد التعليمية المبتكرة
+                                والفعالة، لمساعدة الشباب على استكشاف شغفهم، تحقيق أهدافهم و أن يصبحوا قادة الغد.
+                            </p>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <h3 class="text-xl font-bold text-teal mb-4 text-center md:text-center">
+                                <i class="fas fa-bullseye-pointer text-peach mr-2"></i> نعمل على تحقيق أهداف التنمية
+                                المستدامة الآتية
+                            </h3>
+
+
+                            <div class="flex flex-wrap justify-center md:flex-nowrap md:justify-center">
+
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsustainabledevelopment%2Fwp-content%2Fuploads%2F2019%2F02%2FSDG-4-1.gif&f=1&nofb=1&ipt=4d72a42a6fd8c389edb772de127e965f9a241524cebe2b2774d172ff737b78e4"
+                                    alt="SDG 4: Quality Education"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    loading="lazy">
+
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsites%2Fun2.un.org%2Ffiles%2Ffield%2Fimage%2Fe_gif_05.gif&f=1&nofb=1&ipt=891a5e6c8bdef1856a4b79af3783b8c577ec3dc1ad799545beb28730f840d2b3"
+                                    alt="SDG 5: Gender Equality"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    loading="lazy">
+
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsites%2Fun2.un.org%2Ffiles%2Ffield%2Fimage%2Fe_gif_08.gif&f=1&nofb=1&ipt=71dce9c4ea0fcd2e860107d9a47e82370ff464fd4baf308acf3cba8bf2fd6c12"
+                                    alt="SDG 8: Decent Work and Economic Growth"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    loading="lazy">
+
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsites%2Fun2.un.org%2Ffiles%2Ffield%2Fimage%2Fe_gif_10.gif&f=1&nofb=1&ipt=6ee9ce1d1e1c8fd556cf7605bf6bc317f8e4793f2460d74d9e4b4d0d004e993b"
+                                    alt="SDG 10: Reduced Inequalities"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    loading="lazy">
+
+                                <img src="https://www.un.org/sites/un2.un.org/files/field/image/e_gif_17.gif"
+                                    alt="SDG 17: Partnerships for the Goals"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 px-4 md:px-0 animate-on-scroll mt-8 lg:mt-12 flex items-center"
+                    style="transform: translateX(-50px);" data-delay="200">
+
+                    <div class="relative group w-full">
+
+                        <div id="about-image-container" class="relative group w-full">
+                            <img id="about-image" src="https://i.ibb.co/spDBBLLS/group-sbs-web.webp"
+                                alt="فريق شباب بتساعد شباب يتعاونون"
+                                class="rounded-lg shadow-xl w-full transition-transform duration-500 group-hover:scale-105">
+
+                        </div>
+                        <div class="about-social-links">
+                            <h4>تابعنا علي مواقع التواصل الإجتماعي</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://www.facebook.com/shbab.btsad.shbab" target="_blank"
+                                    aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://t.me/shbab_btsad_shbab" target="_blank" aria-label="Telegram"><i
+                                        class="fab fa-telegram-plane"></i></a>
+                                <a href="https://www.instagram.com/shbab_btsad_shbab" target="_blank"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.whatsapp.com/channel/0029VaaIxne4inonDidw7m1H" target="_blank"
+                                    aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.youtube.com/@shbab_btsad_shbab" target="_blank"
+                                    aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/sbs-%D8%B4%D8%A8%D8%A7%D8%A8-%D8%A8%D8%AA%D8%B3%D8%A7%D8%B9%D8%AF-%D8%B4%D8%A8%D8%A7%D8%A8/mycompany/"
+                                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="timeline-section" class="py-16 md:py-20 bg-white relative overflow-hidden">
+        <div id="particles-js-timeline" class="absolute top-0 left-0 w-full h-full z-0"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-center section-heading animate-on-scroll">رحلتنا المُلهمة
+            </h2>
+            <div class="max-w-4xl mx-auto relative timeline">
+
+                <div class="relative mb-12 md:mb-16 timeline-item animate-on-scroll">
+                    <div class="flex items-center md:justify-start mb-4 md:mb-0">
+                        <div class="md:w-5/12"></div>
+                        <div class="w-12 h-12 rounded-full shadow-lg timeline-icon timeline-icon-coral">
+                            <i class="fas fa-flag-checkered text-white text-xl"></i>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-stretch justify-between md:gap-8">
+                        <div class="w-full md:w-5/12 mb-6 md:mb-0">
+                            <div class="timeline-content h-full">
+                                <h3 class="text-xl font-bold text-coral mb-2">2020: الانطلاقة</h3>
+                                <p class="text-gray-700">تأسيس المجتمع بهدف طموح: مساعدة الشباب على اكتشاف الفرص
+                                    التعليمية
+                                    التي تغير حياتهم وتلهمهم.</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-5/12 hidden md:block"></div>
+                    </div>
+                </div>
+
+                <div class="relative mb-12 md:mb-16 timeline-item animate-on-scroll">
+                    <div class="flex items-center md:justify-end mb-4 md:mb-0">
+                        <div class="md:w-5/12"></div>
+                        <div class="w-12 h-12 rounded-full shadow-lg timeline-icon timeline-icon-teal">
+                            <i class="fas fa-university text-white text-xl"></i>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-stretch justify-between md:gap-8">
+                        <div class="w-full md:w-5/12 hidden md:block md:order-1"></div>
+                        <div class="w-full md:w-5/12 mb-6 md:mb-0 md:order-2">
+                            <div class="timeline-content h-full">
+                                <h3 class="text-xl font-bold text-teal mb-2">2021: إنشاء فعاليات أصلية</h3>
+                                <p class="text-gray-700">تنظيم فعالية للتعريف بالمنح الدراسية في الجامعات المصرية
+                                    المرموقة
+                                    (مثل AUC, GUC, Zewail)، ومساعدة 75+ طالب في الحصول عليها.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-12 md:mb-16 timeline-item animate-on-scroll">
+                    <div class="flex items-center md:justify-start mb-4 md:mb-0">
+                        <div class="md:w-5/12"></div>
+                        <div class="w-12 h-12 rounded-full shadow-lg timeline-icon timeline-icon-peach">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-stretch justify-between md:gap-8">
+                        <div class="w-full md:w-5/12 mb-6 md:mb-0">
+                            <div class="timeline-content h-full">
+                                <h3 class="text-xl font-bold text-peach mb-2">2022: توسع ونمو</h3>
+                                <p class="text-gray-700">تجاوز 10,000 فرصة منشورة، والوصول لآلاف الشباب، وتنظيم فعالية
+                                    للمنح
+                                    بالجامعات الأمريكية بحضور مسؤولين من 4 جامعات.</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-5/12 hidden md:block"></div>
+                    </div>
+                </div>
+
+                <div class="relative mb-12 md:mb-16 timeline-item animate-on-scroll">
+                    <div class="flex items-center md:justify-end mb-4 md:mb-0">
+                        <div class="md:w-5/12"></div>
+                        <div class="w-12 h-12 rounded-full shadow-lg timeline-icon timeline-icon-navy">
+                            <i class="fas fa-laptop-code text-white text-xl"></i>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-stretch justify-between md:gap-8">
+                        <div class="w-full md:w-5/12 hidden md:block md:order-1"></div>
+                        <div class="w-full md:w-5/12 mb-6 md:mb-0 md:order-2">
+                            <div class="timeline-content h-full">
+                                <h3 class="text-xl font-bold text-navy mb-2">2023: التوسع في الشراكات</h3>
+                                <p class="text-gray-700">الشراكات العلمية والترويجية مع شركاء متعددين، لتوفير معلومات عن
+                                    المنح , مهارات القرن الحديث لأكثر من 10000+ طالب.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative timeline-item animate-on-scroll">
+                    <div class="flex items-center md:justify-start mb-4 md:mb-0">
+                        <div class="md:w-5/12"></div>
+                        <div class="w-12 h-12 rounded-full shadow-lg timeline-icon timeline-icon-coral">
+                            <i class="fas fa-award text-white text-xl"></i>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-stretch justify-between md:gap-8">
+                        <div class="w-full md:w-5/12 mb-6 md:mb-0">
+                            <div class="timeline-content h-full">
+                                <h3 class="text-xl font-bold text-coral mb-2">2024: التتويج والتقدير</h3>
+                                <p class="text-gray-700">الفوز بالمركز الأول في جائزة المجلس العربي لشباب العالم (مسار
+                                    الواعدون)، تأكيداً على تأثيرنا والتزامنا بتمكين الشباب العربي.</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-5/12 hidden md:block"></div>
+                    </div>
+                </div>
+
+
+                <div class="relative mb-12 md:mb-16 timeline-item animate-on-scroll">
+                    <div class="flex items-center md:justify-end mb-4 md:mb-0">
+                        <div class="md:w-5/12"></div>
+                        <div class="w-12 h-12 rounded-full shadow-lg timeline-icon timeline-icon-teal">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <div class="md:w-5/12"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-stretch justify-between md:gap-8">
+                        <div class="w-full md:w-5/12 hidden md:block md:order-1"></div>
+                        <div class="w-full md:w-5/12 mb-6 md:mb-0 md:order-2">
+                            <div class="timeline-content h-full">
+                                <h3 class="text-xl font-bold text-teal mb-2">2025: الإنتقالة</h3>
+                                <p class="text-gray-700">الإنتقال من كوننا شريك مجتمعي لفعاليات صغيرة إلي تنظيم
+                                    والإشتراك في
+                                    فعاليات كبيرة وصولاً إلي المعسكرات التطويرية و مقابلة شبابنا علي أرض الواقع و التحدث
+                                    معهم في ندوات و أيضاً إشراكهم في أنشطتنا المختلفة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="events" class="events-section w-full py-16 md:py-20 bg-white block">
+
+        <div class="relative w-full flex items-center justify-center events-section__hero mb-10">
+
+            <div class="absolute inset-0 events-section__hero-overlay z-30 pointer-events-none"></div>
+
+            <div class="w-full h-full absolute inset-0 z-10">
+                <div class="swiper-container events-section__hero-swiper h-full w-full">
+                    <div class="swiper-wrapper">
+
+
+                        <div class="swiper-slide">
+                            <video playsinline muted loop autoplay class="w-full h-full object-cover object-center"
+                                style="min-height:660px;">
+                                <source
+                                    src="https://media-hosting.imagekit.io/0705e5d155cb4e08/1745542888040956.mp4?Expires=1840150911&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=w6cLiMXKU3c3hoIPKpCCIlwpfRhB3EmHaE9GpUrsdfvIZpWq1dOqQIcbhftIENOwLn5YUuORFJZym1Bkg4Egttx6wmmqPel19WmR4CYCeZ0S20l3L8Ogubf2w3dwGy4Iee~DufuOvEcbWvM9zEFLA0oAlhwBSCblWjUW0j5-eEOYBzab5UZj0sUyeyi7lcb6ztQt8uJEAxBoKl9pQSuj4H0tN9vFUJgjB3-PNixQokQ0iGj59uOBZg3M58889YdvAyWwCxlrXUxf5A2cQB8mUTnbq5x4ET5is735N22jLzGIJuxzBsmXQpJPB3-0Fw-LjnrvO9PqMMMcZMrbRiWwSw__"
+                                    type="video/mp4">
+                            </video>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="swiper-pagination events-section__hero-pagination absolute left-0 right-0 bottom-0 mb-5 z-20">
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative z-40 w-full max-w-3xl mx-auto flex flex-col items-center text-center px-4">
+                <h1 class="hero-title text-4xl md:text-5xl drop-shadow-lg mb-6">
+                    استكشف فعالياتنا ومعسكراتنا!
+                </h1>
+                <p class="hero-subtitle text-lg md:text-xl mb-8 max-w-2xl">
+                    فعاليات ومعسكرات شبابية متجددة تجمعنا على الإبداع والتعلم والتواصل المجتمعي. ابحث وجرب وانضم إلى
+                    مغامرتنا القادمة!
+                </p>
+                <a href="#events-grid-container"
+                    class="btn btn-primary hero-cta-btn bounceIn inline-flex items-center gap-2"
+                    aria-label="عرض جميع الفعاليات"
+                    onclick="document.getElementById('events-grid-container')?.scrollIntoView({behavior:'smooth'});return false;">
+                    <span>عرض الفعاليات القادمة</span>
+                    <i class="fas fa-angle-down text-xl"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="events-countdown-timer w-full flex justify-center z-10 py-4 md:py-5 mb-8">
+            <div
+                class="flex items-center space-x-3 space-x-reverse text-lg md:text-xl font-bold countdown-text-container">
+                <i class="far fa-clock text-2xl countdown-icon"></i>
+                <span id="countdown-text">الحدث القادم يبدأ خلال: ...</span>
+            </div>
+        </div>
+
+        <div class="w-full px-4 md:px-8 max-w-screen-xl mx-auto">
+
+
+            <div class="flex flex-wrap items-center justify-between w-full mt-5 mb-8 gap-4">
+
+                <div class="flex-grow md:flex-grow-0">
+                    <label class="font-bold mr-2 text-lg text-navy" style="font-family:'Tajawal';">تصنيف
+                        الفعاليات:</label>
+                    <div class="inline-flex flex-wrap mt-2 md:mt-0" id="event-type-filters">
+
+                        <span class="text-sm text-gray-500">جاري تحميل الفلاتر...</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3 items-center justify-end w-full md:w-auto">
+                    <div class="inline-flex flex-wrap mr-2 order-1 md:order-none" id="event-time-filters">
+
+                        <span class="text-sm text-gray-500"></span>
+                    </div>
+
+                    <div class="relative order-2 md:order-none">
+                        <label for="event-search" class="sr-only">بحث</label>
+                        <input id="event-search" type="search" placeholder="بحث..." aria-label="بحث عن فعالية"
+                            class="events-section__search-input" autocomplete="off" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="events-grid-container" class="mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-center section-heading mb-8">الفعاليات القادمة</h2>
+                <div id="events-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" tabindex="0"
+                    aria-label="قائمة الفعاليات">
+                    <p class="col-span-full text-center text-gray-500 py-8">جاري تحميل الفعاليات...</p>
+                </div>
+            </div>
+
+
+            <div class="w-full mb-16 mt-4">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-center section-heading mb-8 events-section__past-events-title">
+                    فعاليات وأنشطة سابقة
+                </h2>
+                <div class="events-section__past-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <p class="col-span-full text-center text-gray-500 py-8">جاري تحميل الأنشطة السابقة...</p>
+                </div>
+            </div>
+            <p class="text-center text-gray-600 mt-3">بالإضافة لأحداث أخري ستجدها في الإنفوجرافيك الخاص بنا.</p>
+
+
+        </div>
+    </section>
+
+
+    <section id="team" class="py-16 md:py-20 bg-light-cyan">
+
+        <div class="container mx-auto px-4">
+            <section class="mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-center section-heading animate-on-scroll">تعرف على
+                    فريقنا</h2>
+                <h2 class="section-title text-3xl font-bold animate-on-scroll">المؤسس</h2>
+                <div class="founder-card animate-on-scroll" id="founderCard">
+                    <div class="flex justify-center items-center min-h-[200px]">
+                        <p class="text-gray-600">يتم تحميل بيانات المؤسس...</p>
+                    </div>
+                </div>
+                <h2 class="section-title text-3xl font-bold animate-on-scroll">المجلس</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 animate-on-scroll"
+                    id="councilContainer">
+                    <p class="text-gray-600 md:col-span-full text-center py-4">يتم تحميل أعضاء المجلس...</p>
+                </div>
+            </section>
+            <div class="text-center mt-12 animate-on-scroll" style="transform: translateY(50px);" data-delay="300">
+                <a href="pages/team_structure_page.html" class="btn btn-primary">
+                    <i class="fas fa-users ml-2"></i> عرض كل أعضاء الفريق
+                </a>
+                <p class="text-sm text-gray-600 mt-3">اكتشف جميع المساهمين في نجاح الفريق.</p>
+            </div>
+        </div>
+        <script src="dist/js/team_structure_page.js"></script>
+    </section>
+
+
+    <section id="resources-intro" class="animate-on-scroll">
+        <div class="container mx-auto px-6 text-center">
+
+            <h2 class="text-4xl md:text-5xl resources-hero-title mb-5 animate__animated animate__fadeInUp">
+                استكشف مواردنا
+            </h2>
+            <p
+                class="text-lg md:text-xl resources-hero-subtitle mx-auto mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+                نشارك معك مصادر وجدناها مميزة لمساعدتك في رحلتك التعليمية والمهنية.
+            </p>
+
+
+            <div class="typing-container animate__animated animate__fadeIn animate__delay-2s">
+                <span id="resources-typed-text" class="text-xl md:text-2xl"></span>
+            </div>
+
+
+            <div class="mt-12 md:mt-16">
+                <h3 class="text-3xl featured-resources-title">محتوى مميز</h3>
+                <p class="featured-resources-description"></p>
+                <p class="featured-resources-description">أفضل الموارد المختارة بعناية لتطوير مهاراتك.</p>
+
+
+                <div id="featured-resources-grid"
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
+
+                    <p class="text-center text-gray-500 col-span-full">جاري تحميل الموارد المميزة...</p>
+                </div>
+
+
+                <div class="mt-10 md:mt-12 animate-on-scroll" data-delay="300">
+                    <a href="pages/educational_resources.html" class="btn btn-secondary btn-view-all-resources">
+                        <i class="fas fa-layer-group ml-2"></i> تصفح كل الموارد
+                    </a>
+                    <p class="text-sm text-gray-600 mt-3">جاري العمل علي إضافة الكثير من الموارد.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="opportunities" class="py-16 md:py-20 bg-light-cyan">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center section-heading animate-on-scroll">اكتشف فرصتك
+                الذهبية</h2>
+
+
+            <div class="mb-10 animate-on-scroll" style="transform: translateY(50px);" data-delay="100">
+                <div class="flex flex-wrap justify-center gap-3 sm:gap-4" id="filter-buttons">
+                    <button class="filter-btn active" data-type="all">كل الفرص</button>
+                    <button class="filter-btn" data-type="مسابقة">المسابقات</button>
+                    <button class="filter-btn" data-type="دورة تدريبية">الدورات التدريبية</button>
+                    <button class="filter-btn" data-type="منحة دراسية">المنح الدراسية</button>
+                    <button class="filter-btn" data-type="برنامج">البرامج</button>
+                    <button class="filter-btn" data-type="برنامج صيفي">البرامج الصيفية</button>
+                </div>
+                <style>
+                    .filter-btn {
+                        background-color: #e2e8f0;
+                        color: #4a5568;
+                        padding: 0.6rem 1.2rem;
+                        border-radius: 9999px;
+                        font-weight: 600;
+                        transition: all 0.3s ease;
+                        border: 2px solid transparent;
+                        cursor: pointer;
+                    }
+
+                    .filter-btn:hover {
+                        background-color: #fff;
+                        color: var(--teal-dark);
+                        transform: translateY(-2px);
+                        border-color: var(--teal);
+                    }
+
+                    .filter-btn.active {
+                        background-color: var(--coral);
+                        color: white;
+                        border-color: var(--coral-dark);
+                        box-shadow: 0 4px 10px rgba(240, 140, 126, 0.3);
+                    }
+                </style>
+            </div>
+
+
+            <div class="max-w-2xl mx-auto mb-20 animate-on-scroll" style="transform: translateY(50px);"
+                data-delay="200">
+                <div class="relative">
+                    <input type="text" id="search-input"
+                        placeholder="ابحث بالكلمة المفتاحية (مثل: هندسة، برمجة، يابان...)"
+                        class="w-full py-3 px-5 pr-12 text-lg rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-coral focus:border-coral transition duration-300 shadow-sm hover:shadow-md">
+                    <div class="absolute right-5 top-1/2 transform -translate-y-1/2">
+                        <i class="fas fa-search text-gray-400 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="opportunities-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                <p class="text-center text-gray-500 md:col-span-2 lg:col-span-3">جاري تحميل الفرص...</p>
+            </div>
+
+
+            <div class="text-center mt-12 animate-on-scroll" style="transform: translateY(50px);">
+                <a href="https://t.me/shbab_btsad_shbab" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary inline-flex items-center">
+                    <i class="fab fa-telegram-plane ml-2"></i>
+                    <span>عرض المزيد من خلال التليجرام</span>
+                </a>
+                <p class="text-sm text-gray-600 mt-3">سيتم تشغيل قسم الفرص لاحقاً من هذا العام.</p>
+            </div>
+        </div>
+        <style>
+            .badge {
+                display: inline-block;
+                padding: 0.35rem 0.9rem;
+                border-radius: 9999px;
+                font-size: 0.75rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .badge-coral {
+                background: linear-gradient(45deg, var(--coral), var(--peach));
+                color: white;
+            }
+
+            .badge-teal {
+                background: linear-gradient(45deg, var(--teal), var(--light-cyan));
+                color: var(--navy);
+            }
+
+            .badge-navy {
+                background: linear-gradient(45deg, var(--navy), var(--navy-light));
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="py-16 md:py-20 bg-light-cyan">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center section-heading animate-on-scroll">ماذا يقول عنا
+                شبابنا؟</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                <div class="card-base testimonial-card animate-on-scroll" data-delay="0">
+                    <div class="flex items-start">
+                        <img src="https://i.ibb.co/5WqC0JKJ/tawfiq-mah.webp" alt="صورة توفيق"
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold mb-1 text-navy">توفيق محمود</h3>
+                            <p class="text-sm text-teal-dark font-medium mb-4">طالب ثانوي - القاهرة</p>
+                            <p class="text-gray-700 leading-relaxed relative z-10">"التيم خلاني اشارك في تنظيم ايفنتات
+                                مكنتش
+                                هعرف اشارك فيها غير باسم شباب , عرفني فرص وكورسات ومجالات ومهارات مكنتش ههتم اتعرف عليها
+                                برضو وكمان كومينتي التيم (السبب اللي خلاني اتطوع فالتيم) الراقية جدا سواء من دعم الناس
+                                لبعضهم او توجيههم وكمان انه في مجال للنقاش وكله بيكون فليكسابل ومتفهم للتاني من غير
+                                مشاكل مع
+                                بعض."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base testimonial-card animate-on-scroll" data-delay="100">
+                    <div class="flex items-start">
+                        <img src="https://i.ibb.co/hJqVwSvQ/hana-osama.webp" alt="صورة هنا"
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold mb-1 text-navy">هنا أسامة</h3>
+                            <p class="text-sm text-teal-dark font-medium mb-4">طالبة ثانوية - القاهرة</p>
+                            <p class="text-gray-700 leading-relaxed relative z-10">"أنا كنت شخص مشتت من المصادر ومش
+                                عارفة
+                                منين أبدأ وأي هي أفضل البرامج والمسابقات والمنح اللي ممكن أوصلها ،ولكن شباب بتساعد شباب
+                                كانت
+                                community شامل بكل الفرص المحلية والعالمية الموجودة وكانت الفرص مش وهمية بل ممكن
+                                الإعتماد
+                                عليها وتغيير حياتي للأفضل بها.
+                                وعلي الجانب الآخر معرفتي وإكتسابي للعديد من الأشخاص داخل شباب بتساعد شباب ساعدني في
+                                توفير
+                                بيئة داعمة لي وتوسيع مدارك فكري وشعوري بأنها ليست منظمة بل هي عائلة أنتمي لها."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base testimonial-card animate-on-scroll" data-delay="0">
+                    <div class="flex items-start">
+                        <img src="https://i.ibb.co/BVVZfP95/gahzal.webp" alt="صورة غزل"
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold mb-1 text-navy">غزل البسيوني</h3>
+                            <p class="text-sm text-teal-dark font-medium mb-4">طالبة ثانوية - القاهرة</p>
+                            <p class="text-gray-700 leading-relaxed relative z-10">"انضمامي ل team شباب غير فيا حاجات
+                                كتير
+                                اولهم طريقة تفكيري خلاني اعرف افكر احسن و اعرف احكم على الموضوع اللي قدامي بطريقة أصح و
+                                خلاني اعرف اكتر يعني ايه ناس (أصحابك) بتحبك و بتشجعك من غير ما حتى ما يشوفوك و لا يكونوا
+                                عارفينك كويس هما بس ناس طيبين و بيحبوا الخير لك و كمان وفرولي فرص كتير و خلوني أعرف أن
+                                في
+                                أحلام ممكن نحققها و فرص ممكن نحصل عليها قبل ما ندخل الكلية و احنا في السن ده"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base testimonial-card animate-on-scroll" data-delay="100">
+                    <div class="flex items-start">
+                        <img src="https://i.ibb.co/VY2vsN9k/saif-mohamed.webp" alt="صورة سيف"
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold mb-1 text-navy">سيف الاسلام محمد</h3>
+                            <p class="text-sm text-teal-dark font-medium mb-4">طالب هندسة - بني سويف</p>
+                            <p class="text-gray-700 leading-relaxed relative z-10">"الدورة التدريبية المتقدمة التي انا
+                                كنت
+                                متابع التيم من لما بدأ وكان نفسي ادخله من زمان حرفيا التيم كان بمثابة الموسوعه للمسابقات
+                                والايفنتات والكورسات ولا يزال وطبعا انا مبسوط جدا اننا موجود في التيم واننا جزء من
+                                العملية
+                                الي بيقوم بيها الفريق 🤍."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center section-heading animate-on-scroll">تواصل معنا وكن
+                جزءاً من
+                النجاح</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+                <div class="animate-on-scroll" style="transform: translateX(50px);" data-delay="100">
+                    <h3 class="text-2xl font-bold mb-8 text-navy">معلومات التواصل</h3>
+                    <div class="flex items-start mb-8 group">
+                        <div
+                            class="text-coral text-3xl ml-5 transform transition-transform duration-300 group-hover:scale-125">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-lg text-navy">البريد الإلكتروني</h4>
+                            <a href="mailto:contact@shbab-btsad-shbab.com"
+                                class="text-gray-600 hover:text-coral transition duration-300">contact@shbab-btsad-shbab.com</a>
+                            <p class="text-sm text-gray-500 mt-1">للإستفسارات العامة والشراكات</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-8 group">
+                        <div
+                            class="text-coral text-3xl ml-5 transform transition-transform duration-300 group-hover:scale-125">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-lg text-navy">رقم الهاتف</h4>
+                            <a href="tel:+201055256779" class="text-gray-600 hover:text-coral transition duration-300"
+                                dir="ltr">+20 105 525 6779</a>
+                            <p class="text-sm text-gray-500 mt-1">متاح خلال ساعات العمل الرسمية</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-10 group">
+                        <div
+                            class="text-coral text-3xl ml-5 transform transition-transform duration-300 group-hover:scale-125">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-lg text-navy">العنوان الرئيسي</h4>
+                            <p class="text-gray-600">القاهرة، جمهورية مصر العربية</p>
+                            <p class="text-sm text-gray-500 mt-1">نعمل عن بعد ونخدم الشباب في كل مكان</p>
+                        </div>
+                    </div>
+                    <h4 class="font-bold mb-4 text-lg text-navy">تابعنا على منصات التواصل</h4>
+                    <div class="flex flex-wrap gap-3 social-links">
+                        <a href="https://www.facebook.com/shbab.btsad.shbab" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/shbab_btsad_shbab" target="_blank" aria-label="Telegram"><i
+                                class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.instagram.com/shbab_btsad_shbab" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029VaaIxne4inonDidw7m1H" target="_blank"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@shbab_btsad_shbab" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/sbs-%D8%B4%D8%A8%D8%A7%D8%A8-%D8%A8%D8%AA%D8%B3%D8%A7%D8%B9%D8%AF-%D8%B4%D8%A8%D8%A7%D8%A8/mycompany/"
+                            target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll" style="transform: translateX(-50px);" data-delay="200">
+                    <h3 class="text-2xl font-bold mb-8 text-navy">أرسل لنا رسالة مباشرة (قيد التطوير)</h3>
+                    <form>
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 font-medium text-gray-700">الاسم الكامل <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="ادخل اسمك الكامل"
+                                required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block mb-2 font-medium text-gray-700">البريد الإلكتروني <span
+                                    class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="example@domain.com" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="subject" class="block mb-2 font-medium text-gray-700">الموضوع</label>
+                            <input type="text" id="subject" name="subject" class="form-input"
+                                placeholder="مثال: استفسار عن منحة / اقتراح ...">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2 font-medium text-gray-700">الرسالة <span
+                                    class="text-red-500">*</span></label>
+                            <textarea id="message" name="message" rows="6" class="form-input"
+                                placeholder="اكتب رسالتك هنا بوضوح..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full text-lg py-3" disabled="disabled">
+                            <i class="fas fa-paper-plane ml-2"></i> إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="newsletter" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <i class="fas fa-envelope-open-text text-5xl text-white opacity-80 mb-4 animate-on-scroll"
+                style="transform: translateY(50px);"></i>
+            <h2 class="text-3xl font-bold mb-4 animate-on-scroll" style="transform: translateY(50px);" data-delay="100">
+                لا
+                تفوّت أي فرصة!</h2>
+            <p class="text-lg font-bold mb-8 max-w-2xl mx-auto opacity-90 animate-on-scroll"
+                style="transform: translateY(50px);" data-delay="200">من خلال متابعة شباب بتساعد شباب علي المنصات
+                المختلفة</p>
+        </div>
+    </section>
+
+
+    <footer class="bg-navy text-gray-400 py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-5">
+                        <img src="https://i.ibb.co/3yDZTSfF/sbs-logo.webp" alt="شباب بتساعد شباب Logo White"
+                            class="h-12">
+                        <h3 class="text-xl font-bold text-white mr-3">شباب بتساعد شباب</h3>
+                    </div>
+                    <p class="mb-6 text-sm leading-relaxed">مجتمع شبابي رائد لتمكين الشباب العربي من خلال ربطهم بأفضل
+                        الفرص
+                        التعليمية والموارد القيمة منذ 2020.</p>
+                    <div class="flex flex-wrap gap-3 social-links">
+                        <a href="https://www.facebook.com/shbab.btsad.shbab" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/shbab_btsad_shbab" target="_blank" aria-label="Telegram"><i
+                                class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.instagram.com/shbab_btsad_shbab" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029VaaIxne4inonDidw7m1H" target="_blank"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@shbab_btsad_shbab" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/sbs-%D8%B4%D8%A8%D8%A7%D8%A8-%D8%A8%D8%AA%D8%B3%D8%A7%D8%B9%D8%AF-%D8%B4%D8%A8%D8%A7%D8%A8/mycompany/"
+                            target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-5 border-b border-gray-700 pb-2 text-white">روابط مهمة</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الرئيسية</a>
+                        </li>
+                        <li><a href="#about" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>عن
+                                شباب بتساعد شباب</a></li>
+                        <li><a href="#about" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الفعاليات</a>
+                        </li>
+                        <li><a href="#resources-intro" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الموارد التعليمية</a></li>
+                        <li><a href="#opportunities" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>استكشاف الفرص</a></li>
+                        <li><a href="#team" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الفريق</a>
+                        </li>
+
+                        <li><a href="#contact" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>تواصل
+                                معنا</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-5 border-b border-gray-700 pb-2 text-white">أبرز الفئات</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#opportunities" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>المسابقات الدولية</a></li>
+                        <li><a href="#opportunities" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الدورات التدريبية</a></li>
+                        <li><a href="#opportunities" class="hover:text-coral"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>المنح الدراسية</a></li>
+                        <li><a href="educational_resources.html" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الموارد التطويرية</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-5 border-b border-gray-700 pb-2 text-white">ابقى على تواصل</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-coral ml-3 mt-1 text-lg"></i>
+                            <a href="mailto:contact@shbab-btsad-shbab.com"
+                                class="hover:text-coral">contact@shbab-btsad-shbab.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-coral ml-3 mt-1 text-lg"></i>
+                            <a href="tel:+201055256779" class="hover:text-coral" dir="ltr">+20 105 525 6779</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-coral ml-3 mt-1 text-lg"></i>
+                            <span>القاهرة، مصر (ونخدم الجميع أونلاين)</span>
+                        </li>
+                    </ul>
+                    <a href="#contact"
+                        class="btn btn-outline-navy border-coral text-coral hover:bg-coral hover:text-white mt-6 block text-center">أرسل
+                        رسالة مباشرة</a>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm footer-bottom">
+                <p class="mb-4 md:mb-0">© <span id="current-year"></span>جميع الحقوق محفوظة لشباب بتساعد شباب.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-coral">سياسة الخصوصية</a>
+                    <a href="#" class="hover:text-coral"></a>
+                    <a href="#" class="hover:text-coral">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="chatbot-toggler" aria-label="افتح المساعد الذكي"><i class="fas fa-comments text-2xl"></i></div>
+    <div id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>المساعد الذكي</h3>
+            <button id="close-chatbot" aria-label="اغلق المساعد الذكي"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-input"><input type="text" placeholder="اكتب سؤالك هنا..." id="chatbot-input-field"
+                aria-label="ادخل رسالتك للمساعد الذكي">
+            <button id="send-message" aria-label="أرسل الرسالة"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics-compat.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
+    <script src="dist/js/darkmode.js" defer></script>
+    <script src="dist/js/sbs.js" defer></script>
+
+</body>
+
+</html>

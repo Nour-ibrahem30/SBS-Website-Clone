@@ -1,0 +1,245 @@
+:root {
+    --color-white: #ffffff;
+    --color-salmon: #f08c7e;
+    --color-teal: #87baba;
+    --color-light-teal: #bbe8e8;
+    --color-light-salmon: #ffa197;
+    --color-navy: #0d0a3b;
+    --color-dark-gray: #2d2c2c;
+}
+
+body {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    background-color: #f9f9f9;
+    color: var(--color-dark-gray);
+}
+#three-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: max-content;
+    z-index: -1000; /* خلف المحتوى */
+    opacity: 0.15; /* يمكن تعديل الشفافية حسب الرغبة */
+    overflow: hidden; /* لمنع أي تجاوزات محتملة */
+}
+.section-title {
+    position: relative;
+    margin-bottom: 3rem;
+    color: var(--color-navy);
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-salmon);
+    bottom: -10px;
+    right: 0; /* Correct for RTL */
+    left: auto;
+}
+
+.founder-card {
+    background: linear-gradient(135deg, #bbe8e8, #a8dade); /* Light teal gradient */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.founder-card::before { /* Optional decorative element */
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -50px;
+    left: -50px; /* Adjusted for RTL image position */
+    opacity: 0.5;
+}
+
+.council-card {
+    background: linear-gradient(135deg, var(--color-light-salmon), var(--color-salmon));
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.council-card:hover {
+    transform: translateY(-10px);
+}
+
+.leaders-card {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--color-navy);
+    display: flex;
+    flex-direction: column;
+}
+
+.leaders-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.member-card {
+    background-color: white;
+    border-radius: 12px; /* Slightly larger radius like example */
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Slightly softer shadow */
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    overflow: hidden; /* Ensure content fits */
+}
+
+.member-card:hover {
+    border-bottom-color: var(--color-teal);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Default Social Icon Styles */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-navy); /* Default - but overridden by platform */
+    color: white;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.twitter { background-color: #1da1f2; }
+.social-icon.instagram { background-color: #e1306c; }
+.social-icon.linkedin { background-color: #0077b5; }
+.social-icon.whatsapp { background-color: #28D146; }
+.social-icon.youtube { background-color: #ff0000; }
+.social-icon.github { background-color: #333; }
+.social-icon.behance { background-color: #1769ff; }
+.social-icon.telegram { background-color: #0088cc; } /* Added Telegram */
+
+
+/* Founder Card Specific Social Icon Styles - Removed override as requested */
+/* Note: Platform specific colors above will now apply to founder too */
+.founder-card .social-icon { /* Adjust size if needed for founder */
+    width: 40px; height: 40px;
+}
+.founder-card .social-icon:hover { opacity: 0.85; }
+
+/* Profile Image Styles */
+.profile-image { /* Base for council */
+    width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+    border: 4px solid white; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin: 0 auto;
+}
+.profile-image-lg { /* Larger for Founder */
+    width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
+    border: 5px solid white; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+.profile-image-sm { /* Smaller for Leaders/Members */
+    width: 80px; height: 80px; border-radius: 50%; object-fit: cover;
+    border: 3px solid white; flex-shrink: 0;
+}
+
+/* Default Avatar Styles */
+.default-avatar {
+    display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;
+}
+.profile-image.default-avatar { font-size: 36px; }
+.profile-image-lg.default-avatar { font-size: 40px; }
+.profile-image-sm.default-avatar { font-size: 20px; }
+
+/* Filter/Search Input */
+.form-input {
+    width: 100%; padding: 10px 16px; /* Slightly smaller padding */
+    border: 1px solid #e2e8f0; border-radius: 8px; transition: all 0.3s ease;
+    background-color: #fff; /* Ensure background */
+}
+.form-input:focus {
+    outline: none; border-color: var(--color-teal); box-shadow: 0 0 0 3px rgba(135, 186, 186, 0.2);
+}
+
+/* Filter Buttons */
+.filter-buttons-container {
+    overflow-x: auto; /* Allows horizontal scrolling */
+    /* Hide scrollbar visually */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.filter-buttons-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.tab-button {
+    padding: 8px 16px;
+    background-color: transparent; border: none; border-bottom: 3px solid transparent;
+    cursor: pointer; transition: all 0.3s ease; white-space: nowrap;
+    color: #6b7280; font-size: 0.9rem;
+    margin-left: 4px; margin-right: 4px;
+}
+.tab-button.active {
+    border-bottom-color: var(--color-salmon); color: var(--color-salmon); font-weight: bold;
+}
+.tab-button:hover:not(.active) {
+    color: var(--color-dark-gray);
+}
+
+
+/* Department Badge Colors & Styles */
+[class^="dept-"] {
+    display: inline-block; padding: 0.2em 0.6em; font-size: 0.7rem;
+    font-weight: 600; line-height: 1; text-align: center; white-space: nowrap;
+    vertical-align: baseline; border-radius: 0.375rem; margin-top: 0.25rem;
+}
+.dept-hr { background-color: var(--color-salmon); color: white; }
+.dept-pr { background-color: var(--color-teal); color: white; }
+.dept-fr { background-color: var(--color-light-salmon); color: var(--color-dark-gray); }
+.dept-content-writing { background-color: var(--color-light-teal); color: var(--color-dark-gray); }
+.dept-creative { background-color: #9f7aea; color: white; }
+.dept-community-moderator { background-color: #667eea; color: white; }
+.dept-marketing { background-color: #f6ad55; color: white; }
+.dept-software-engineer { background-color: var(--color-navy); color: white; }
+.dept-graphic-design { background-color: #fc8181; color: white; }
+.dept-media { background-color: #68d391; color: white; }
+.dept-ادارة { background-color: var(--color-dark-gray); color: white; }
+.dept-unknown { background-color: #ccc; color: var(--color-dark-gray); } /* Added for safety */
+
+
+/* Footer Styles */
+.footer-social-links a {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 36px; height: 36px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white); transition: all 0.3s ease;
+}
+.footer-social-links a:hover { background-color: var(--color-salmon); transform: translateY(-2px); }
+.footer-bottom a { transition: color 0.3s ease; }
+.btn-outline-navy {
+    border: 2px solid var(--color-salmon); color: var(--color-salmon); padding: 10px 20px;
+    border-radius: 8px; font-weight: bold; transition: all 0.3s ease; display: inline-block; text-align: center;
+}
+.btn-outline-navy:hover { background-color: var(--color-salmon); color: var(--color-white); }
+.hover\:text-coral:hover { color: var(--color-salmon); }
+.text-coral { color: var(--color-salmon); }
+.bg-navy { background-color: var(--color-navy); }

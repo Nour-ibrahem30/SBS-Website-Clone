@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموارد التعليمية - شباب بتساعد شباب</title>
+    <meta name="description" content="ابحث وتصفح آلاف الموارد التعليمية، الدورات، والفرص المتاحة للشباب العربي.">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Link to the updated CSS -->
+    <link rel="stylesheet" href="../styles/educational_resources.css">
+
+</head>
+
+<body class="antialiased pt-16 md:pt-20"> <!-- Adjusted padding top based on header height -->
+
+    <!-- =============================================== -->
+    <!-- Header - Updated to match index.html structure and links -->
+    <!-- =============================================== -->
+    <header id="main-header"
+        class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <!-- Back Arrow Link -->
+                    <a href="index.html#resources" aria-label="العودة لقسم الموارد الرئيسي"
+                        class="ml-3 text-navy hover:text-coral transition-colors text-xl md:text-2xl back-arrow-link">
+                        <i class="fas fa-arrow-right"></i> <!-- Arrow points right in RTL -->
+                    </a>
+                    <!-- Logo Link -->
+                    <a href="index.html" aria-label="العودة للصفحة الرئيسية">
+                        <img src="https://i.ibb.co/3yDZTSfF/sbs-logo.webp" alt="شباب بتساعد شباب Logo"
+                            class="h-12 md:h-16 transition-all duration-300 ease-in-out">
+                    </a>
+                </div>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="index.html#home" class="nav-link">الرئيسية</a>
+                    <a href="index.html#about" class="nav-link">عن المبادرة</a>
+                    <a href="#main-content-area" class="nav-link active">الموارد</a> <!-- Active link for this page -->
+                    <a href="index.html#team" class="nav-link">الفريق</a>
+                    <a href="index.html#opportunities" class="nav-link">الفرص</a>
+                    <a href="index.html#blog" class="nav-link">المدونة</a>
+                    <a href="index.html#contact" class="nav-link">تواصل معنا</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button"
+                        class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-coral"
+                        aria-label="فتح القائمة">
+                        <i class="fas fa-bars text-2xl text-navy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============================================== -->
+    <!-- Mobile Nav - Updated to match index.html structure and links -->
+    <!-- =============================================== -->
+    <div id="mobile-nav"
+        class="fixed inset-0 bg-navy bg-opacity-98 z-[60] hidden transform transition-transform duration-300 ease-in-out translate-x-full">
+        <div class="flex justify-end p-5">
+            <button id="close-mobile-nav" aria-label="إغلاق القائمة">
+                <i class="fas fa-times text-3xl text-white hover:text-coral transition-colors"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col items-center justify-center h-full space-y-6 -mt-16">
+            <a href="index.html#home" class="mobile-nav-link">الرئيسية</a>
+            <a href="index.html#about" class="mobile-nav-link">عن المبادرة</a>
+            <a href="#main-content-area" class="mobile-nav-link">الموارد</a> <!-- Links to current page content -->
+            <a href="index.html#team" class="mobile-nav-link">الفريق</a>
+            <a href="index.html#opportunities" class="mobile-nav-link">الفرص</a>
+            <a href="index.html#blog" class="mobile-nav-link">المدونة</a>
+            <a href="index.html#contact" class="mobile-nav-link">تواصل معنا</a>
+        </nav>
+    </div>
+
+    <!-- Background Animations (Keep as they are specific to this page) -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+    <div class="geometric-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Hero Section (Keep specific content) -->
+    <section class="pt-16 pb-10 md:pt-20 md:pb-12 relative overflow-hidden bg-gradient-to-b from-white to-light-cyan">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center hero-content">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 fade-in text-navy">
+                    استكشف مواردنا
+                </h1>
+                <p class="text-lg md:text-xl mb-8 fade-in delay-1 text-dark-gray">
+                    ابحث وتصفح آلاف الفرص والمصادر المتاحة لمساعدتك في رحلتك.
+                </p>
+                <div class="typing-container fade-in delay-2">
+                    <span id="typed-text" class="text-2xl font-bold"></span>
+                </div>
+                <div
+                    class="search-bar-container w-full md:w-4/5 lg:w-2/3 mx-auto mt-8 md:mt-10 mb-4 md:mb-6 relative fade-in delay-3">
+                    <label for="search-input" class="sr-only">ابحث عن موارد تعليمية</label>
+                    <span class="search-icon fas fa-search"></span>
+                    <input id="search-input" type="text" placeholder="ابحث في العناوين، الوصف، أو الوسوم..."
+                        class="w-full outline-none">
+                    <div id="autocomplete-suggestions"></div>
+                </div>
+                <div id="category-filter-buttons" class="fade-in delay-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main id="main-content-area" class="container mx-auto px-6 mt-[-2rem] md:mt-[-3rem] mb-16 relative z-10">
+        <div id="loading-indicator" class="text-center py-10 text-gray-500">
+            جاري تحميل الموارد...
+        </div>
+        <!-- Content will be loaded here by JS -->
+    </main>
+
+    <!-- =============================================== -->
+    <!-- Footer - Updated to match index.html structure and links -->
+    <!-- =============================================== -->
+    <footer class="bg-navy text-gray-400 py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Footer Column 1 -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-5">
+                        <!-- Use the correct logo path -->
+                        <a href="index.html" aria-label="الصفحة الرئيسية">
+                            <img src="https://i.ibb.co/3yDZTSfF/sbs-logo.webp" alt="شباب بتساعد شباب Logo White"
+                                class="h-12">
+                        </a>
+                        <!-- Removed redundant H3 title -->
+                    </div>
+                    <p class="mb-6 text-sm leading-relaxed">مجتمع شبابي رائد لتمكين الشباب العربي من خلال ربطهم بأفضل
+                        الفرص التعليمية والموارد القيمة منذ 2020.</p>
+                    <div class="flex flex-wrap gap-3 social-links">
+                        <a href="https://www.facebook.com/shbab.btsad.shbab" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://t.me/shbab_btsad_shbab" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://www.instagram.com/shbab_btsad_shbab" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029VaaIxne4inonDidw7m1H" target="_blank"
+                            rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@shbab_btsad_shbab" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/sbs-%D8%B4%D8%A8%D8%A7%D8%A8-%D8%A8%D8%AA%D8%B3%D8%A7%D8%B9%D8%AF-%D8%B4%D8%A8%D8%A7%D8%A8/mycompany/"
+                            target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Footer Column 2 - Important Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-5 border-b border-gray-700 pb-2 text-white">روابط مهمة</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html#home" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الرئيسية</a></li>
+                        <li><a href="index.html#about" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>عن شباب بتساعد شباب</a></li>
+                        <li><a href="index.html#events" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الفعاليات</a></li>
+                        <li><a href="index.html#team" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الفريق</a></li>
+                        <li><a href="#main-content-area" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الموارد التعليمية</a></li>
+                        <li><a href="index.html#opportunities" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الفرص</a></li>
+                        <li><a href="index.html#contact" class="hover:text-coral footer-link"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Column 3 - Top Categories (Updated to filter current page) -->
+                <div>
+                    <h3 class="text-lg font-bold mb-5 border-b border-gray-700 pb-2 text-white">أبرز الفئات</h3>
+                    <ul class="space-y-3">
+                        <!-- Added class="filter-trigger" and data-filter attribute -->
+                        <li><a href="#" class="hover:text-coral footer-link filter-trigger" data-filter="programming"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>البرمجة</a></li>
+                        <li><a href="#" class="hover:text-coral footer-link filter-trigger" data-filter="languages"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>اللغات</a></li>
+                        <li><a href="#" class="hover:text-coral footer-link filter-trigger" data-filter="documents"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>المستندات والكتب</a></li>
+                        <li><a href="#" class="hover:text-coral footer-link filter-trigger" data-filter="podcasts"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>البودكاست</a></li>
+                        <li><a href="#" class="hover:text-coral footer-link filter-trigger"
+                                data-filter="graphicDesign"><i
+                                    class="fas fa-angle-left ml-2 opacity-70"></i>الجرافيك</a></li>
+                        <!-- Add more filter triggers as needed -->
+                    </ul>
+                </div>
+                <!-- Footer Column 4 - Stay Connected -->
+                <div>
+                    <h3 class="text-lg font-bold mb-5 border-b border-gray-700 pb-2 text-white">ابقى على تواصل</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-coral ml-3 mt-1 text-lg"></i>
+                            <a href="mailto:contact@shbab-btsad-shbab.com"
+                                class="hover:text-coral footer-link">contact@shbab-btsad-shbab.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-coral ml-3 mt-1 text-lg"></i>
+                            <a href="tel:+201055256779" class="hover:text-coral footer-link" dir="ltr">+20 105 525
+                                6779</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-coral ml-3 mt-1 text-lg"></i>
+                            <span>القاهرة، مصر (ونخدم الجميع أونلاين)</span>
+                        </li>
+                    </ul>
+                    <!-- Link to contact section on index.html -->
+                    <a href="index.html#contact"
+                        class="btn-action btn-primary border-coral text-white hover:bg-coral hover:text-white mt-6 block text-center">
+                        أرسل رسالة مباشرة
+                    </a>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm footer-bottom">
+                <p class="mb-4 md:mb-0">© <span id="current-year"></span> جميع الحقوق محفوظة لشباب بتساعد شباب.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-coral footer-link">سياسة الخصوصية</a>
+                    <a href="#" class="hover:text-coral footer-link">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Keep existing ones, defer loading) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js" defer></script>
+    <!-- Link to the updated JS -->
+    <script src="../dist/js/darkmode.js" defer></script>
+<script src="../dist/js/educational_resources.js" defer></script>
+
+</body>
+
+</html>
