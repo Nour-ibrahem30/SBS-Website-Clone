@@ -52,60 +52,36 @@ class DarkModeSystem {
 
   // Create dark mode toggle button
   createDarkModeButton() {
+    // If a button already exists in the DOM (we added it to the HTML), use it
+    const existing = document.getElementById("dark-mode-toggle");
+    if (existing) {
+      this.darkModeButton = existing;
+      // Ensure it has the expected class/attributes
+      this.darkModeButton.classList.add("dark-mode-toggle");
+      this.darkModeButton.setAttribute("aria-label", "تبديل الوضع المظلم");
+      return;
+    }
+
+    // Otherwise create the button dynamically (fallback for pages without the static button)
     this.darkModeButton = document.createElement("button");
     this.darkModeButton.id = "dark-mode-toggle";
     this.darkModeButton.className = "dark-mode-toggle";
     this.darkModeButton.setAttribute("aria-label", "تبديل الوضع المظلم");
     this.darkModeButton.innerHTML = `
-            <i class="fas fa-moon"></i>
-            <span class="dark-mode-text">الوضع المظلم</span>
-        `;
+                        <i class="fas fa-moon"></i>
+                        <span class="dark-mode-text">الوضع المظلم</span>
+                `;
 
-    // More robust header/nav selection for all pages
-    const insertIntoNav = () => {
-      // Try various selectors used across different pages
-      const selectors = [
-        "header nav ul", // Common nav structure
-        "header .flex.justify-between.items-center nav", // Index page
-        "nav.flex.items-center", // Educational resources
-        "header nav", // Generic nav
-        "header .flex.items-center", // Header with flex
-      ];
-
-      for (const selector of selectors) {
-        const container = document.querySelector(selector);
-        if (container) {
-          // Create li if inserting into ul
-          if (container.tagName.toLowerCase() === "ul") {
-            const li = document.createElement("li");
-            li.className = "nav-item flex items-center";
-            li.appendChild(this.darkModeButton);
-            container.appendChild(li);
-          } else {
-            container.appendChild(this.darkModeButton);
-          }
-          return true;
-        }
-      }
-      return false;
-    };
-
-    // Try to insert into navigation
-    const inserted = insertIntoNav();
-
-    // If not inserted in nav, try header or fallback to fixed position
-    if (!inserted) {
-      const header = document.querySelector("header");
-      if (header) {
-        header.appendChild(this.darkModeButton);
-      } else {
-        // Ultimate fallback: fixed position
-        document.body.appendChild(this.darkModeButton);
-        this.darkModeButton.style.position = "fixed";
-        this.darkModeButton.style.top = "20px";
-        this.darkModeButton.style.right = "20px";
-        this.darkModeButton.style.zIndex = "9999";
-      }
+    // Try inserting into header/nav; if not found, append to body
+    const header = document.querySelector("header");
+    if (header) {
+      header.appendChild(this.darkModeButton);
+    } else {
+      document.body.appendChild(this.darkModeButton);
+      this.darkModeButton.style.position = "fixed";
+      this.darkModeButton.style.top = "20px";
+      this.darkModeButton.style.right = "20px";
+      this.darkModeButton.style.zIndex = "9999";
     }
   }
 
@@ -1130,7 +1106,8 @@ function injectDarkModeStyles() {
 // Initialize dark mode system when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   injectDarkModeStyles();
-  new DarkModeSystem();
+  // expose instance on window so other code can access/apply theme
+  window.darkModeSystem = new DarkModeSystem();
 
   // Additional initialization for dynamic content
   setTimeout(() => {

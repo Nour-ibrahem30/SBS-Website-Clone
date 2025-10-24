@@ -7,16 +7,24 @@
     <title>شباب بتساعد شباب - تمكين الشباب من خلال التعليم</title>
     <meta name="description"
         content="منصة شبابية رائدة تربط الشباب بأفضل الفرص التعليمية: مسابقات، دورات، منح دراسية، وموارد حصرية لمساعدتك على التفوق منذ 2020. حائزة على جائزة المجلس العربي لشباب العالم 2024.">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+        as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
     <link rel="icon" type="image/x-icon" href="src/sbs_ic.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.rtl.css" />
-    <link rel="stylesheet" href="styles/sbs.css">
+    <link rel="preload" href="styles/sbs.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/sbs.css">
+    </noscript>
 
 
 </head>
@@ -29,7 +37,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <img src="https://i.ibb.co/3yDZTSfF/sbs-logo.webp" alt="شباب بتساعد شباب Logo"
-                        class="h-16 transition-height duration-300 ease-in-out">
+                        class="h-16 transition-height duration-300 ease-in-out" loading="lazy" decoding="async">
                 </div>
                 <nav class="hidden md:flex space-x-10">
                     <a href="#home" class="nav-link"></a>
@@ -184,27 +192,27 @@
 
                                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsustainabledevelopment%2Fwp-content%2Fuploads%2F2019%2F02%2FSDG-4-1.gif&f=1&nofb=1&ipt=4d72a42a6fd8c389edb772de127e965f9a241524cebe2b2774d172ff737b78e4"
                                     alt="SDG 4: Quality Education"
-                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity" loading="lazy" decoding="async">
                                     loading="lazy">
 
                                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsites%2Fun2.un.org%2Ffiles%2Ffield%2Fimage%2Fe_gif_05.gif&f=1&nofb=1&ipt=891a5e6c8bdef1856a4b79af3783b8c577ec3dc1ad799545beb28730f840d2b3"
                                     alt="SDG 5: Gender Equality"
-                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity" loading="lazy" decoding="async">
                                     loading="lazy">
 
                                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsites%2Fun2.un.org%2Ffiles%2Ffield%2Fimage%2Fe_gif_08.gif&f=1&nofb=1&ipt=71dce9c4ea0fcd2e860107d9a47e82370ff464fd4baf308acf3cba8bf2fd6c12"
                                     alt="SDG 8: Decent Work and Economic Growth"
-                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity" loading="lazy" decoding="async">
                                     loading="lazy">
 
                                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.un.org%2Fsites%2Fun2.un.org%2Ffiles%2Ffield%2Fimage%2Fe_gif_10.gif&f=1&nofb=1&ipt=6ee9ce1d1e1c8fd556cf7605bf6bc317f8e4793f2460d74d9e4b4d0d004e993b"
                                     alt="SDG 10: Reduced Inequalities"
-                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity" loading="lazy" decoding="async">
                                     loading="lazy">
 
                                 <img src="https://www.un.org/sites/un2.un.org/files/field/image/e_gif_17.gif"
                                     alt="SDG 17: Partnerships for the Goals"
-                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity"
+                                    class="h-20 w-[30%] md:h-24 md:w-auto object-contain hover:opacity-80 transition-opacity" loading="lazy" decoding="async">
                                     loading="lazy">
                             </div>
                         </div>
@@ -216,9 +224,9 @@
                     <div class="relative group w-full">
 
                         <div id="about-image-container" class="relative group w-full">
-                            <img id="about-image" src="https://i.ibb.co/spDBBLLS/group-sbs-web.webp"
-                                alt="فريق شباب بتساعد شباب يتعاونون"
-                                class="rounded-lg shadow-xl w-full transition-transform duration-500 group-hover:scale-105">
+                <img id="about-image" src="https://i.ibb.co/spDBBLLS/group-sbs-web.webp" alt="فريق شباب بتساعد شباب يتعاونون"
+                    class="rounded-lg shadow-xl w-full transition-transform duration-500 group-hover:scale-105" loading="lazy"
+                    decoding="async">
 
                         </div>
                         <div class="about-social-links">
@@ -673,7 +681,7 @@
                 <div class="card-base testimonial-card animate-on-scroll" data-delay="0">
                     <div class="flex items-start">
                         <img src="https://i.ibb.co/5WqC0JKJ/tawfiq-mah.webp" alt="صورة توفيق"
-                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar" loading="lazy" decoding="async">
                         <div class="flex-1">
                             <h3 class="text-lg font-bold mb-1 text-navy">توفيق محمود</h3>
                             <p class="text-sm text-teal-dark font-medium mb-4">طالب ثانوي - القاهرة</p>
@@ -691,7 +699,7 @@
                 <div class="card-base testimonial-card animate-on-scroll" data-delay="100">
                     <div class="flex items-start">
                         <img src="https://i.ibb.co/hJqVwSvQ/hana-osama.webp" alt="صورة هنا"
-                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar" loading="lazy" decoding="async">
                         <div class="flex-1">
                             <h3 class="text-lg font-bold mb-1 text-navy">هنا أسامة</h3>
                             <p class="text-sm text-teal-dark font-medium mb-4">طالبة ثانوية - القاهرة</p>
@@ -712,7 +720,7 @@
                 <div class="card-base testimonial-card animate-on-scroll" data-delay="0">
                     <div class="flex items-start">
                         <img src="https://i.ibb.co/BVVZfP95/gahzal.webp" alt="صورة غزل"
-                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar" loading="lazy" decoding="async">
                         <div class="flex-1">
                             <h3 class="text-lg font-bold mb-1 text-navy">غزل البسيوني</h3>
                             <p class="text-sm text-teal-dark font-medium mb-4">طالبة ثانوية - القاهرة</p>
@@ -730,7 +738,7 @@
                 <div class="card-base testimonial-card animate-on-scroll" data-delay="100">
                     <div class="flex items-start">
                         <img src="https://i.ibb.co/VY2vsN9k/saif-mohamed.webp" alt="صورة سيف"
-                            class="w-16 h-16 rounded-full ml-5 object-cover avatar">
+                            class="w-16 h-16 rounded-full ml-5 object-cover avatar" loading="lazy" decoding="async">
                         <div class="flex-1">
                             <h3 class="text-lg font-bold mb-1 text-navy">سيف الاسلام محمد</h3>
                             <p class="text-sm text-teal-dark font-medium mb-4">طالب هندسة - بني سويف</p>
@@ -865,8 +873,8 @@
 
                 <div class="md:col-span-1">
                     <div class="flex items-center mb-5">
-                        <img src="https://i.ibb.co/3yDZTSfF/sbs-logo.webp" alt="شباب بتساعد شباب Logo White"
-                            class="h-12">
+                <img src="https://i.ibb.co/3yDZTSfF/sbs-logo.webp" alt="شباب بتساعد شباب Logo White"
+                    class="h-12" loading="lazy" decoding="async">
                         <h3 class="text-xl font-bold text-white mr-3">شباب بتساعد شباب</h3>
                     </div>
                     <p class="mb-6 text-sm leading-relaxed">مجتمع شبابي رائد لتمكين الشباب العربي من خلال ربطهم بأفضل
@@ -962,7 +970,13 @@
         </div>
     </footer>
 
-    <div id="chatbot-toggler" aria-label="افتح المساعد الذكي"><i class="fas fa-comments text-2xl"></i></div>
+    <div id="fixed-buttons">
+        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="تبديل الوضع المظلم">
+            <i class="fas fa-sun"></i>
+            <span class="dark-mode-text">الوضع المضيء</span>
+        </button>
+        <div id="chatbot-toggler" aria-label="افتح المساعد الذكي"><i class="fas fa-comments text-2xl"></i></div>
+    </div>
     <div id="chatbot-container">
         <div class="chatbot-header">
             <h3>المساعد الذكي</h3>
@@ -975,19 +989,19 @@
         </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js" defer></script>
 
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js" defer></script>
 
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics-compat.js" defer></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" defer></script>
