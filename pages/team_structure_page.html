@@ -181,27 +181,6 @@
             </div>
         </div>
     </footer>
-    <script>
-      (function(){
-        function applyCdnMap(map){
-          try{
-            var imgs=document.querySelectorAll('img');
-            imgs.forEach(function(img){
-              var src=img.getAttribute('src');
-              if(!src) return;
-              var key=src.replace(/^\.\/?/, '');
-              if(map[key]) img.setAttribute('src', map[key]);
-            });
-          }catch(e){ }
-        }
-        fetch('../cdn_mapping.json').then(function(r){
-          if(!r.ok) throw new Error('no mapping');
-          return r.json();
-        }).then(function(json){ applyCdnMap(json); }).catch(function(){
-          if(window.SBS_CDN_MAP) applyCdnMap(window.SBS_CDN_MAP);
-        });
-      })();
-    </script>
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js" defer></script>

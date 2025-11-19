@@ -18,7 +18,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
-    <link rel="icon" type="image/webp" href="https://i.ibb.co/3yDZTSfF/sbs-logo.webp">
+    <link rel="icon" type="image/x-icon" href="src/sbs_ic.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.rtl.css" />
@@ -45,9 +45,9 @@
                     <a href="#home" class="nav-link">الرئيسية</a>
                     <a href="#about" class="nav-link">عن شباب بتساعد شباب</a>
                     <a href="#events" class="nav-link">الفعاليات</a>
+                    <a href="#team" class="nav-link">الفريق</a>
                     <a href="#resources-intro" class="nav-link">الموارد</a>
                     <a href="#opportunities" class="nav-link">الفرص</a>
-                    <a href="#team" class="nav-link">الفريق</a>
                     <a href="#contact" class="nav-link">تواصل معنا</a>
                 </nav>
                 <div class="flex items-center">
@@ -73,9 +73,9 @@
             <a href="#home" class="mobile-nav-link">الرئيسية</a>
             <a href="#about" class="mobile-nav-link">عن شباب بتساعد شباب</a>
             <a href="#events" class="mobile-nav-link">الفعاليات</a>
+            <a href="#team" class="mobile-nav-link">الفريق</a>
             <a href="#resources-intro" class="mobile-nav-link">الموارد</a>
             <a href="#opportunities" class="mobile-nav-link">الفرص</a>
-            <a href="#team" class="mobile-nav-link">الفريق</a>
 
             <a href="#contact" class="mobile-nav-link">تواصل معنا</a>
         </div>
@@ -1004,27 +1004,6 @@
 
     <script src="dist/js/darkmode.js" defer></script>
     <script src="dist/js/sbs.js" defer></script>
-    <script>
-      (function(){
-        function applyCdnMap(map){
-          try{
-            var imgs=document.querySelectorAll('img');
-            imgs.forEach(function(img){
-              var src=img.getAttribute('src');
-              if(!src) return;
-              var key=src.replace(/^\.\/?/, '');
-              if(map[key]) img.setAttribute('src', map[key]);
-            });
-          }catch(e){ }
-        }
-        fetch('cdn_mapping.json').then(function(r){
-          if(!r.ok) throw new Error('no mapping');
-          return r.json();
-        }).then(function(json){ applyCdnMap(json); }).catch(function(){
-          if(window.SBS_CDN_MAP) applyCdnMap(window.SBS_CDN_MAP);
-        });
-      })();
-    </script>
 
 </body>
 
