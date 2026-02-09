@@ -46,7 +46,8 @@ Well-structured HTML and CSS for easy customization
 Demonstrates practical use of web layout techniques
 
 📸 Screenshots
-Here ============================================================
+<img width="1913" height="977" alt="SBS" src="https://github.com/user-attachments/assets/3c7969dd-7c9d-4916-99d2-e2f604dfc877" />
+
 🤝 Contributing
 Contributions are welcome! If you’d like to improve this project:
 
